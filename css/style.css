@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* EX 1 */
+.ex-1{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  background-color: red;
+}
+
+.ex-1 .square{
+  width: 50px;
+  height: 50px;
+}
+
+.ex-1 .blue{
+  background-color: blue;
+}
+
+.ex-1 .green{
+  position: absolute;
+  bottom: 0px;
+  left: 100%;
+  background-color: green;
+}
+
+/* EX 2 */
+
+.ex-2{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  background-color: red;
+}
+
+.ex-2 .square{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.ex-2 .top-right{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.ex-2 .bottom-right{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* EX 3 */
+
+.ex-3{
+  width: 900px;
+  height: 500px;
+  background-color: green;
+  margin: 20px;
+}
+
+.square-blue{
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+}
+.square-red{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+.ex-3 .square-blue:first-child .square-red:last-child{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.ex-3 .square-blue:last-child .square-red:last-child{
+  margin-left: 10px;
+}
+
+.title-box{
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 300px;
+    width: 90%;
+    background-color: greenyellow;
+    margin: 200px auto;
+}
+
+.title-box h1{
+  font-size: 50px;
+  line-height: 300px;
+}
+
+.title-box:hover{
+  cursor: pointer;
+}
+
+.title-box:hover h1{
+  color: red;
+}
